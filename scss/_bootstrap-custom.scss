@@ -1,0 +1,167 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #fff;
+
+$white:  #fff;
+$gray-100: #f6f6f6;
+$gray-200: #e6e6e6;
+$gray-300: #eeeeee;
+$gray-400: #cccccc;
+$gray-500: #444444;
+$gray-600: #888888;
+$gray-700: #999999;
+$gray-800: #dddddd;
+$gray-900: #212529 !default;
+$black:  #222222;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #e24545;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: ();
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $blue !default;
+$secondary:     $white;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-300;
+$dark:          $gray-500;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+	0: 0,
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.5),
+	5: ($spacer * 3),
+	6: ($spacer * 4.5),
+	7: ($spacer * 6),
+	8: ($spacer * 7.5),
+	9: ($spacer * 9),
+	10: ($spacer * 10.5)
+), $spacers);
+
+$base-min-width: 320px;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:                $black;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+);
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1024px,
+  xl: 1140px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+
+$font-family-sans-serif:     'Montserrat', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:            $font-family-sans-serif;
+
+$h1-font-size: 1.625rem;
+$h5-font-size: 1rem;
+$h6-font-size: 0.875rem;
+
+$headings-font-weight:        700;
+$headings-color:              $gray-500;           
+
+
+$btn-border-radius: 0;
+$btn-line-height: 1;
+$btn-border-width: 0.125rem;
+$btn-padding-y: 0.688rem;
+$btn-padding-x: 1.5rem;
+$btn-focus-width: 0;
+
+$navbar-brand-padding-y: 0.25rem;
+$navbar-padding-x: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-padding-y: 0.563rem;
+$navbar-padding-x: 0;
+$navbar-nav-link-padding-x: 0;
+$navbar-nav-link-padding-y: 0;
+
+
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $gray-500;
+$breadcrumb-divider-color: $gray-500;
+$breadcrumb-divider: '\e907';
+$breadcrumb-item-padding: 0.8rem;
+$breadcrumb-padding-x: 0;
+
+$input-padding-y:0.25rem;
+$input-padding-x: 0.25rem;
+
+$dropdown-link-hover-color:     $red;
+$dropdown-link-hover-bg:        transparent;
+
+$input-focus-box-shadow: none;

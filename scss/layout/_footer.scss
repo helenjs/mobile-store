@@ -1,0 +1,42 @@
+.footer {
+	background-color: $gray-200;
+	padding: rem-calc(30) 0 rem-calc(33);
+}
+.copyright {
+	font-size: rem-calc(11);
+	text-transform: uppercase;
+	color: $gray-600;
+	padding-top: rem-calc(4);
+	text-align: center;
+	width: 100%;
+	@include media('>=tablet') {
+		text-align: left;
+	}
+	a {
+		text-decoration: none;
+		color: $gray-500;
+		&:hover {
+			color: $red;
+		}
+	}
+}
+.partners {
+	@extend %listreset;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	@include media('>=tablet') {
+		justify-content: flex-end;
+	}
+	li {
+		padding: 0 rem-calc(5);
+		margin-bottom: rem-calc(15);
+	}
+	a {
+		transition: opacity .4s;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

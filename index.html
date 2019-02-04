@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Project Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script>
+    window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
+    <script src="js/jquery.main.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header" class="header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg ">
+                    <a href="#" class="cart btn btn-outline-dark">
+                        <span class="icon icon-shopping-bag"></span>
+                        <span class="price">$ 460.00</span>
+                        <span class="count">2</span>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span></span></button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">all brands</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Huawei</a></li>
+                                    <li><a class="dropdown-item" href="#">SONY</a></li>
+                                    <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                                    <li><a class="dropdown-item" href="#">apple</a></li>
+                                    <li><a class="dropdown-item" href="#">samsung</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">latest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">featured</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="search-block">
+                            <form action="#" class="search-form form-inline my-2 my-lg-0 ">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button type="submit"><span class="icon icon-search"></span></button>
+                            </form>
+                            <a href="#" class="opener">
+                                <span class="icon icon-search"></span>
+                                <span class="close"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </header>
+        <main id="main" role="main">
+            <section class="banner" style="background-image: url(images/bg1.jpg);">
+                <div class="container-fluid">
+                    <div class="row holder align-items-center">
+                        <div class="col-md-6">
+                            <h1>My wishlist</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-md-end">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">my wishlist</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid">
+                <div class="wish-section">
+                    <div class="sort-block">
+                        <div class="row">
+                            <div class="offset-sm-4 col-sm-4 offset-md-5 col-md-4">
+                                <form action="#">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </div>
+                            <div class="col-sm-4 col-md-3 text-sm-right">
+                                <button type="button" id="clear-list" class="btn btn-outline-dark" disabled>Clear list</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wish-list">
+                        <div class="row" id="products">
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img1.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Huawei Mate S</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light  btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img2.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>SONY XPERIA Z5</h6>
+                                    <div class="price-group">
+                                        <div class="price">$550.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img3.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Xiaomi Mi 4i</h6>
+                                    <div class="price-group">
+                                        <div class="price">$350.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img4.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>HUAWEI G8 4G</h6>
+                                    <div class="price-group">
+                                        <div class="price">$350.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img5.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>iPhone Rose Gold</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                        <div class="old-price">$649.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img4.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>HUAWEI G8 4G</h6>
+                                    <div class="price-group">
+                                        <div class="price">$350.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img6.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Galaxy Core Prime</h6>
+                                    <div class="price-group">
+                                        <div class="price">$399.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img7.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Apple iPhone 6S</h6>
+                                    <div class="price-group">
+                                        <div class="price">$550.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img5.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>iPhone Rose Gold</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                        <div class="old-price">$649.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img4.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>HUAWEI G8 4G</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img6.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Galaxy Core Prime</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img7.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Apple iPhone 6S</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img1.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Huawei Mate S</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img2.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>SONY XPERIA Z5</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img3.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>Xiaomi Mi 4i</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 item-holder">
+                                <a href="#" class="item">
+                                    <div class="img-holder">
+                                        <img src="images/product-img4.png" alt="image description">
+                                        <button type="submit" class="btn btn-outline-secondary btn-remove">remove from list</button>
+                                    </div>
+                                    <h6>HUAWEI G8 4G</h6>
+                                    <div class="price-group">
+                                        <div class="price">$280.00</div>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button Group">
+                                        <button type="button" class="btn btn-outline-light btn-remove">
+                                            <span class="icon-trash"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-light">
+                                            <span class="icon-shopping-cart"></span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features-section">
+                <div class="container-fluid">
+                    <div class="features-slider">
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-thumbs-up"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Full warrenty</a></h5>
+                                <p>Read About Our Warrenty</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-truck"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">express shipping</a></h5>
+                                <p>Local &#038; International Shipping</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-commenting"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">mobile blog</a></h5>
+                                <p>Discuss Your Favourite Phone</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-headphones"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">24/7 Support</a></h5>
+                                <p>Get Full Support via Chat</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-thumbs-up"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Full warrenty</a></h5>
+                                <p>Read About Our Warrenty</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-truck"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">express shipping</a></h5>
+                                <p>Local &#038; International Shipping</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-commenting"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">mobile blog</a></h5>
+                                <p>Discuss Your Favourite Phone</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <span class="icon-headphones"></span>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">24/7 Support</a></h5>
+                                <p>Get Full Support via Chat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="subscribe-section">
+                <div class="container-fluid">
+                    <div class="row align-content-center">
+                        <div class="col-md-6 col-lg-3 d-flex align-items-center">
+                            <h6>subscribe to latest smartphones news &#038; great deals we offer</h6>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-5">
+                            <form action="#" class="subscribe-form form-validation">
+                                <input type="email" placeholder="Enter Your Email Address ..."  data-required="true">
+                                <button type="submit"><span class="icon-envelope-o"></span></button>
+                            </form>
+                        </div>
+                        <div class="col-lg-5 col-xl-4">
+                            <ul class="social-networks">
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-google-plus"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-pinterest-p"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-youtube-play"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon-rss"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="copyright">
+                            <p>Copyright © 2015 <a href="#">codeitStore</a> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="partners ">
+                            <li>
+                                <a href="#">
+                                    <img src="images/visa-electron.png" alt="visa-electron">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/paypal.png" alt="paypal">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/visa.png" alt="visa">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/mastercard.png" alt="mastercard">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/maestro.png" alt="maestro">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/discover.png" alt="discover">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> 
+</body>
+
+</html>
